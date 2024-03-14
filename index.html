@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Visualizer</title>
+</head>
+
+<body>
+    <div class="heading-bar">
+        <div class="seek-bar">
+            <p>Speed of the algorithm:</p>
+            <input id="speed" type="range" min=1 max=5 step=1 value=4>
+        </div>
+        <h1 class="main-heading">Sorting visualizer</h1>
+    </div>
+    <nav>
+        <div class="nav-left">
+            <button class="btn" id="generate-array">Generate new array</button>
+            <div class="input">
+                <p>enter array size (0-70)</p>
+                <input type="text" class="array_size" id="array_size" value=40>
+            </div>
+        </div>
+        <ul>
+            <li><button class="btn" id="bubble-sort">Bubble sort</button></li>
+            <li><button class="btn" id="selection_sort">Selection sort</button></li>
+            <li><button class="btn" id="insertion-sort">Insertion sort</button></li>
+            <li><button class="btn" id="merge-sort">Merge sort</button></li>
+            <li><button class="btn" id="quick-sort">Quick sort</button></li>
+            <li><button class="btn" id="heap-sort">Heap sort</button></li>
+        </ul>
+    </nav>
+
+    <div class="grid">
+        <div class="left">
+            <h1><i><u>Time Complexity</u></i></h1>
+            <p id="time-complexity"></p>
+        </div>
+
+        <div class="bars_container" id="bars_container">
+
+        </div>
+
+        <div class="right">
+            <h1><i><u>Space Complexity</u></i></h1>
+            <p id="space-complexity"></p>
+        </div>
+    </div>
+
+    <script src="js_file/bubble_sort.js"></script>
+    <script src="js_file/heap_sort.js"></script>
+    <script src="js_file/insertation_sort.js"></script>
+    <script src="js_file/merge_sort.js"></script>
+    <script src="js_file/quick_sort.js"></script>
+    <script src="js_file/selection_sort.js"></script>
+    <script src="js_file/sorting.js"></script>
+</body>
+
+</html>

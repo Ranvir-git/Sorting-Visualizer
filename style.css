@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.heading-bar{
+    display: flex;
+    align-items: center;
+}
+
+.seek-bar{
+    margin-left: 2%;
+}
+
+.main-heading{
+    text-align: center;
+    padding: 1%;
+    font-size: 3rem;
+    color:blue;
+    margin-left:25%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;  
+    padding: 1%;  
+    background-color: rgba(242, 240, 240, 0.705);  
+    box-shadow:1px 0px 1px;
+    align-items: center;    
+}
+
+.nav-left{
+    display: flex;
+}
+
+.input{
+    margin: 0 2%;
+}
+
+.input input{
+    padding: 1%;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.btn{
+    background: rgb(135, 193, 221);
+    border:1px solid black;
+    border-radius:10px;
+    padding: 8px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    color: white;
+    background-color:rgb(57, 118, 149);
+    box-shadow: 1px 8px 15px rgb(33, 104, 140);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.bars_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.bars{
+    border: 1px solid black;
+}
+
+.left h1{
+    text-align: center;
+    margin-top: 8%;
+}
+
+.left p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight:bold;
+    color:rgb(104, 78, 29);
+    margin-top: 7%;
+    line-height: 2.5rem;
+}
+
+.right h1{
+    text-align: center;
+    margin-top: 8%;
+}
+
+.right p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight:bold;
+    color:rgb(104, 78, 29);
+    margin-top: 7%;
+    line-height: 2.5rem;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 800px) {
+    nav{
+        display:block;
+        justify-content: space-between;  
+        background-color: rgba(209, 213, 222, 0.705); 
+        padding: 10px; 
+        box-shadow:1px 0px 1px;   
+    }
+    nav ul{
+        display:block;
+    }
+    .heading-bar{
+        display:block;
+        align-items: center;
+    }
+    nav ul li{
+        padding:1%;
+    }
+    nav ul li button{
+        width: 100%;
+    }
+    .main-heading{
+        font-size: 2rem;
+        margin-left:3%;
+    }
+    .seek-bar{
+        text-align: center;
+        margin-top: 4%;
+        padding: 3%;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows:auto auto auto;
+    }
+    .bars_container{
+        grid-row-start:0;
+        grid-row-end: 1;
+        padding:1%;
+    }
+    
+  }
